@@ -26,4 +26,7 @@ type pps_socket, file_type;
 type proc_tp, fs_type, proc_type;
 
 # Fingerprint 
-type sysfs_fingerprint, fs_type, sysfs_type;
+type fp, fs_type, sysfs_type;
+
+type sysfs_fingerprint, sysfs_type, fs_type;
+
