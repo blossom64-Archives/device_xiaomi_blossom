@@ -1,4 +1,4 @@
-cc_library_shared {Add commentMore actions
+cc_library_shared {
     name: "libshim_utils",
     srcs: ["libshim_utils.cpp"],
     shared_libs: [],
