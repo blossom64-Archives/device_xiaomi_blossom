@@ -7,6 +7,18 @@
 # Enable userspace reboot
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
+
+# Disable kernel requirement enforcement for VINTF compatibility
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
+# Override kernel version for VINTF compatibility
+
+PRODUCT PROPERTY OVERRIDES += \
+ro.kernel.version-4.19.191
+
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
